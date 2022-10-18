@@ -122,8 +122,11 @@ a:focus {
 }
 
 .navbar-brand img {
-  width: 30px;
-  margin-right: 5px;
+  font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    color: #191919;
+    text-transform: uppercase;
 }
 
 .navbar-brand span {
@@ -145,7 +148,7 @@ a:focus {
 
 .custom_nav-container .navbar-toggler .navbar-toggler-icon {
   background-image: url(../images/menu.png);
-  background-size: 45px;
+  background-size: 45px; 
 }
 
 .quote_btn-container {
@@ -913,3 +916,60 @@ a:focus {
   color: #9c9b9b;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+/* Contact page design */
+
+.contenaire{
+  background-image: linear-gradient(180deg, #F9B233,#FCEA10);
+  border-radius: 20px;
+  /* flex-direction: column; */
+  width: 80%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+}
+
+.contenaire .test form{
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  grid-template-rows: auto auto !important;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.contenaire .test form .info{
+  display: flex  !important;
+  flex-direction: column !important;
+  grid-column: 1 !important;
+}
+.contenaire .test form .message{
+  grid-area: 1/2/1/2 !important;
+}
+
+.contenaire .test form input,  textarea {
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+.contenaire .test form .btn {
+  grid-area: 2/1/2/3;
+  
+  
+}
+
+.contenaire .test form .btn input {
+  padding: 10px 30px;
+  border-radius: 40px;
+}
+
+/* input, textarea 
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+} */
