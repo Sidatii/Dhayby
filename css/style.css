@@ -748,7 +748,18 @@ a:focus {
 .info_section {
   background-color: #363636;
   color: #ffffff;
+  margin-top: 500px;
 }
+
+@media (max-width: 700px){
+  .info_section {
+    background-color: #363636;
+    color: #ffffff;
+    margin-top: 40px;
+  }
+}
+
+
 
 .info_section .info_container .info_logo {
   display: -webkit-box;
@@ -930,7 +941,6 @@ a:focus {
   display: flex;
   flex-wrap: wrap;
   border: #fb930a;
-  background-color: #c0c0c0;
   /* left: 50%; */
   width: 55%;
   margin: 50px auto;
@@ -1060,13 +1070,14 @@ a:focus {
   grid-area: address;
 }
 
-.button button {
+.button a {
+  display: flex;
   border-radius: 10px;
   font-size: 20px;
   border: none;
-  width: 10vw;
-  height: 8vh;
-  margin: 10px;
+  width: 20vw;
+  height: auto;
+  margin: 10px 10px;
   background-color: #F9B233;
   color: #ffffff;
   font-weight: bold;
@@ -1082,6 +1093,14 @@ a:focus {
 
  .contact_mean1 img,.contact_mean2 img, .contact_mean3 img{
   padding: 12px 0px;
+ }
+
+ @media (max-width:700px){
+  .contenaire2 form{
+    display: flex !important;
+    flex-direction: column;
+  }
+  
  }
 
 
